@@ -1,26 +1,14 @@
 
 package com.mycompany.discoteca_project;
 
+import com.murcia.utils.ListaEnlazada;
+
 public class PILAPREMIO {
-    private Premio tope; 
+  private ListaEnlazada<String> premios; //Usando la lista de la libreria
+     
+  //constructor
+  public PILAPREMIO(){
+      premios = new ListaEnlazada<>() {};
+      }
 
-
-    public PILAPREMIO() {
-    }
-    
-
-      public PASAPORTE desapilar() {
-       
-        return null;
-       
-    }
-       public boolean estaVacia() { 
-       
-        return false;
-       
-       }
-       public void mostrarPremios() {
-       
-        }
-      
 }
