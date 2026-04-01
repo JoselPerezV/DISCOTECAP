@@ -13,7 +13,7 @@ public class PILAPREMIO {
 
     // Apilar premio
     public void apilar(String premio) {
-        premios.addFirst(premio); // método correcto
+        premios.addFirst(premio); 
     }
 
     // Desapilar premio

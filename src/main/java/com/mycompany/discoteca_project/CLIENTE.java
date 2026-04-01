@@ -20,5 +20,6 @@ public void esFrecuente(){
 public void asignarPasaporte(){
 
 }
+
 }
     
