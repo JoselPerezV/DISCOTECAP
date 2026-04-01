@@ -8,18 +8,15 @@ public class PASAPORTE {
     private String fechaExpedicion;
     private String fechaVencimiento;
     
-    
-   public void addSello(){
-       
-   }
-   
-   public void esValido(){
-       
-   }
-   
-   public void CanjearPremio(){
-       
-   }
-   
+    //constructor
+    public PASAPORTE(String numero, String nombre, String nacionalidad,
+                     String fechaExpedicion, String fechaVencimiento){
+        this.numero = numero;
+        this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
+        this.fechaExpedicion = fechaExpedicion;
+        this.fechaVencimiento = fechaVencimiento;
+    }
+  
  
 }
