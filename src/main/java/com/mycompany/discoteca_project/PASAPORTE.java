@@ -47,7 +47,7 @@ public class PASAPORTE {
         System.out.println("Vence: "+fechaVencimiento);
     }
   //verificar si esta vigente   
+public boolean estaVigente(String fechaActual){
+return fechaActual.compareTo(fechaVencimiento) <= 0; 
 }
-  
- 
 }
