@@ -1,4 +1,3 @@
-
 package com.mycompany.discoteca_project;
 
 public class CLIENTE {

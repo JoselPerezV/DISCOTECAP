@@ -1,11 +1,16 @@
-
 package com.mycompany.discoteca_project;
 
+import com.murcia.utils.ListaEnlazada; 
+
 public class PILAPREMIO {
-    private Premio tope; 
-
-
+    private ListaEnlazada premios; 
+    
     public PILAPREMIO() {
+        private ListaEnlazada premios;
+        
+        public PILAPREMIO(){
+            premios = new ListaEnlazada();
+        }
     }
     
 
