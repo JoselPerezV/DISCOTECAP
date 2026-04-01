@@ -37,8 +37,17 @@ public class PASAPORTE {
     public String getFechaVencimiento() {
         return fechaVencimiento;
     }
-    
-    
+  
+    //mostrar informacion del pasaporte
+    public void mostrarInfo(){
+        System.out.println("Pasaporte #: "+ numero);
+        System.out.println("Titular: "+nombre);
+        System.out.println("Nacionalidad: "+ nacionalidad);
+        System.out.println("Expedido: "+fechaExpedicion);
+        System.out.println("Vence: "+fechaVencimiento);
+    }
+  //verificar si esta vigente   
+}
   
  
 }
