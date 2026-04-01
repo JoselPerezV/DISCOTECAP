@@ -17,6 +17,28 @@ public class PASAPORTE {
         this.fechaExpedicion = fechaExpedicion;
         this.fechaVencimiento = fechaVencimiento;
     }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public String getFechaExpedicion() {
+        return fechaExpedicion;
+    }
+
+    public String getFechaVencimiento() {
+        return fechaVencimiento;
+    }
+    
+    
   
  
 }
