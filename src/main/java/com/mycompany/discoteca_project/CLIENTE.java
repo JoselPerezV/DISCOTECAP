@@ -20,6 +20,17 @@ public void esFrecuente(){
 public void asignarPasaporte(){
 
 }
+public String getNombre() {
+    return nombre;
+}
+
+public int getVisitas() {
+    return visitas;
+}
+
+public void setVisitas(int visitas) {
+    this.visitas = visitas;
+}
 
 }
     
