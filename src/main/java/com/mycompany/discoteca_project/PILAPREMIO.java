@@ -10,7 +10,7 @@ public class PILAPREMIO {
     public PILAPREMIO() {
         premios = new ListaEnlazada<>();
     }
-
+//clase modificada por Andres
     // Apilar premio
     public void apilar(String premio) {
         premios.addFirst(premio); 
