@@ -18,6 +18,16 @@ public class COLACLIENTE extends ColaEnlazada<CLIENTE> {
         System.out.println("No hay clientes en la cola.");
     }
     }
-    
+ 
+    //atiende (desencola) al primer cliente
+    public CLIENTE atenderCliente(){
+    if(size() == 0){
+        System.out.println("No hay clientes en la cola.");
+        return null;
+    }
+    CLIENTE atendido = desencolar();
+        System.out.println("Cliente atendido"+ atendido.getNombre());
+    return atendido;
+    }
     
 }
