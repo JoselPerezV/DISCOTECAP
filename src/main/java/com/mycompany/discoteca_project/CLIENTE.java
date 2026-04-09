@@ -47,8 +47,27 @@ public class CLIENTE {
     public void setSiguiente(CLIENTE siguiente) {
         this.siguiente = siguiente;
     }
+   
+    //metodos Importantes
+    public void registrarVisita(){
+    visitas++;
+    }
     
+    public boolean esFrecuente(){
+    return visitas >= 15;// numero de visitas necesarias para considerar frecuente.
+    }
     
+    public void asignarPasaporte(){
+    if(esFrecuente()){
+        tienePasaporte = true;
+        System.out.println("Se asigno pasaporte a " + nombre);
+    }else {
+        System.out.println(nombre+"Aun no es cliente frecuente.");
+    }
+    }
+    public void mostrarCliente(){
+        System.out.println((tienePasaporte ? "Si" :"No" )+"Cliente: "+nombre+"| Visitas: "+visitas+  "| Pasaporte: ");
+    }
 
 }
     
