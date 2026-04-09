@@ -14,6 +14,39 @@ public class CLIENTE {
     this.tienePasaporte = false;
     this.siguiente = null;
     }
+    //metodos GETTERS y SETTERS
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getVisitas() {
+        return visitas;
+    }
+
+    public void setVisitas(int visitas) {
+        this.visitas = visitas;
+    }
+
+    public boolean isTienePasaporte() {
+        return tienePasaporte;
+    }
+
+    public void setTienePasaporte(boolean tienePasaporte) {
+        this.tienePasaporte = tienePasaporte;
+    }
+
+    public CLIENTE getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(CLIENTE siguiente) {
+        this.siguiente = siguiente;
+    }
     
     
 
