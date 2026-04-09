@@ -5,33 +5,17 @@ public class CLIENTE {
     private String nombre;
     private int visitas;
     private boolean tienePasaporte;
-    private CLIENTE siguiente;
+    public CLIENTE siguiente;//referencia al siguiente cliente 
     
-    
-//incrementa el contador de las visitas
-public void registrarVisitas(){
-}
-
-//Verifica si el cliente es frecuente de la discoteca
-public void esFrecuente(){
-
-}
-
-//Otorga el pasaporte si es cliente frecuente de la discoteca
-public void asignarPasaporte(){
-
-}
-public String getNombre() {
-    return nombre;
-}
-
-public int getVisitas() {
-    return visitas;
-}
-
-public void setVisitas(int visitas) {
+    //constructor 
+    public CLIENTE(String nombre, int visitas){
+    this.nombre = nombre;
     this.visitas = visitas;
-}
+    this.tienePasaporte = false;
+    this.siguiente = null;
+    }
+    
+    
 
 }
     
