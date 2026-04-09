@@ -48,7 +48,7 @@ public class CLIENTE {
         this.siguiente = siguiente;
     }
    
-    //metodos Importantes
+    //metodos Importantes de la clase
     public void registrarVisita(){
     visitas++;
     }
