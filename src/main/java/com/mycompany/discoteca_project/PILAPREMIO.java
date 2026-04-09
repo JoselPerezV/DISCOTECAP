@@ -8,7 +8,7 @@ public class PILAPREMIO {
     private ListaEnlazada<String> premios;
 
     public PILAPREMIO() {
-        premios = new ListaEnlazada<>();
+        premios = new ListaEnlazada<>() {};
     }
 //clase modificada por Andres
     // Apilar premio

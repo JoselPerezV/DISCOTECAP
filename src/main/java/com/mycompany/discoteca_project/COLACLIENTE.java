@@ -1,27 +1,10 @@
 package com.mycompany.discoteca_project;
+import com.murcia.utils.ColaEnlazada;
 
-
-public class COLACLIENTE {
-    private CLIENTE frente; // primer cliente en la cola
-    private CLIENTE fin;
+public class COLACLIENTE extends ColaEnlazada {
+    //Constructor
+    public COLACLIENTE(){
+    super ();// llama al constructor de ColaEnlazada
+    } 
     
-     public COLACLIENTE() {
-        
-    }
-     public void encolar(CLIENTE c) {
-       
-    }
-     
-     public CLIENTE desencolar() {
-     
-        return null;
-     
-    }
-    public boolean estaVacia() { 
-        return false;
-    }  
-    
-    public void mostrarCola() {
-        
-        }
 }
