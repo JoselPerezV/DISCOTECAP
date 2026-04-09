@@ -14,7 +14,10 @@ public class COLACLIENTE extends ColaEnlazada<CLIENTE> {
         CLIENTE cliente = get(i);
         System.out.println("-"+cliente.getNombre()+"|Visitas: "+cliente.getVisitas());
     }
-    
+    if(size() == 0){
+        System.out.println("No hay clientes en la cola.");
     }
+    }
+    
     
 }
