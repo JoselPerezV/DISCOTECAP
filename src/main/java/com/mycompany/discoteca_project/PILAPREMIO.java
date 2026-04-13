@@ -8,9 +8,23 @@ public class PILAPREMIO {
     public PILAPREMIO(){
     premios = new ListaEnlazada<>() {};
     }
+    
+    
     //apilar premio
 public void apilar (String premio){
 premios.addFirst(premio);
 }
+
+//Desapilar premio
+public String desapilar(){
+if (premios.size() == 0){
+    System.out.println("No Hay Premios");
+    return null;
+}
+String premio = premios.getFirst();
+premios.remove();
+return premio;
+}
+
 
 }
