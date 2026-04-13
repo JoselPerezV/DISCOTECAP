@@ -6,7 +6,11 @@ public class COLACLIENTE extends ColaEnlazada<CLIENTE> {
     public COLACLIENTE(){
     super ();// llama al constructor de ColaEnlazada
     } 
-    
+    //metodo para agregar un cliente
+    public void agregarCliente(CLIENTE cliente) {
+        encolar(cliente); // usa el método de la librería
+        System.out.println("Se agregó a la cola el cliente: " + cliente.getNombre());
+    }
     //Mostrar todos los clientes en la cola
     public void mostrarCola(){
         System.out.println("Clientes en la cola: ");

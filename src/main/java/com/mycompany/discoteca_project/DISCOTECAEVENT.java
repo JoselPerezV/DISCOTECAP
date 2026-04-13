@@ -30,9 +30,9 @@ public class DISCOTECAEVENT {
 
     // Muestra la información del evento
     public void mostrarEvento() {
-        System.out.println("🎉 Evento: " + nombreEvento);
-        System.out.println("📅 Fecha: " + fecha);
-        System.out.println("🎁 Premio especial: " + premioEspecial);
-        System.out.println("➕ Bonus de visitas: " + bonusVisitas);
+        System.out.println(" Evento: " + nombreEvento);
+        System.out.println(" Fecha: " + fecha);
+        System.out.println(" Premio especial: " + premioEspecial);
+        System.out.println(" Bonus de visitas: " + bonusVisitas);
     }
 }
