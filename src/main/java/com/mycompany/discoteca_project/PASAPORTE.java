@@ -19,5 +19,9 @@ public class PASAPORTE {
         return beneficio;
     }
    
-    
+   public void mostrarInfo(){
+       System.out.println("Pasaporte VIP Entregado al cliente");
+       System.out.println("Codigo: "+codigo);
+       System.out.println("Beneficios: "+ beneficio);
+   }
 }
