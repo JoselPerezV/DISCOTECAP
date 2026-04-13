@@ -23,6 +23,18 @@ public class PILAPREMIO {
   premios.remove();
   return premio;
   }
-  
-  
+
+//mostrar premios
+public void mostrarPremios(){
+if(premios.size() == 0){
+    System.out.println("No hay premios");
+    return;
+}
+    System.out.println("Premios en la Pila: ");
+    System.out.println(premios.toString());
+    
+}  
+  public boolean estaVacia(){
+  return premios.size() == 0;
+    }
 }
