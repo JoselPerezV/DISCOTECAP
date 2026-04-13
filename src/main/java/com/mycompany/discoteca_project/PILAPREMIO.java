@@ -34,5 +34,9 @@ if(premios.size() == 0){
     System.out.println("Premios en la pila: ");
     System.out.println(premios.toString());
 }
+//verificar que la pila esta vacia
+public boolean estaVacia(){
+return premios.size()== 0;
+}
 
 }
