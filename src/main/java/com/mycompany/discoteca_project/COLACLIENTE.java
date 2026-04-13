@@ -24,5 +24,28 @@ public class COLACLIENTE extends ColaEnlazada<CLIENTE> {
           cliente.mostrarCliente();
       }
   }
+  //Atender cliente normal
+  public CLIENTE atenderCliente(){
+  if(size() == 0){
+      System.out.println("NO hay cliente en la fila");
+      return null;
+  }
+  CLIENTE atendido = desencolar();
+      System.out.println("Cliente atendido: "+atendido.getNombre());
+      return atendido;
+  }
   
+  //Atender primero a clientes VIP
+  public CLIENTE atenderClienteVIP(){
+  for(int i = 0;i<size();i++){
+  CLIENTE cliente = get(i);
+  if(cliente.getPasaporte()!=null){
+      CLIENTE vip = cliente;
+      remove(i);
+      System.out.println("Cliente VIP Atendido sin hacer fila: "+vip.getNombre());
+      return vip;
+  }
+  }
+      return atenderCliente();
+  }
 }
