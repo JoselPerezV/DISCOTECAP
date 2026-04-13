@@ -4,70 +4,47 @@ package com.mycompany.discoteca_project;
 public class CLIENTE {
     private String nombre;
     private int visitas;
-    private boolean tienePasaporte;
-    public CLIENTE siguiente;//referencia al siguiente cliente 
+    private PASAPORTE pasaporte;
     
-    //constructor 
-    public CLIENTE(String nombre, int visitas){
+   //cONSTRUCTOR
+    public CLIENTE(String nombre, int visitas) {
     this.nombre = nombre;
     this.visitas = visitas;
-    this.tienePasaporte = false;
-    this.siguiente = null;
+    this.pasaporte = null;
     }
-    //metodos GETTERS y SETTERS
+public String getNombre() { return nombre; }
+    public int getVisitas() { return visitas; }
+    public PASAPORTE getPasaporte() { return pasaporte; }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void sumarVisitas(int cantidad) {
+        this.visitas += cantidad;
     }
 
-    public int getVisitas() {
-        return visitas;
+    // Recompensas escalonadas
+    public void verificarRecompensas() {
+        if (visitas >= 20 && pasaporte == null) {
+            pasaporte = new PASAPORTE(
+                "P-" + nombre,
+                nombre,
+                "Colombiana",
+                "12-04-2026",
+                "12-04-2031"
+            );
+            System.out.println("🎉 Cliente fiel: " + nombre + " recibió PASAPORTE VIP");
+        } else if (visitas >= 15) {
+            System.out.println("🎁 Cliente " + nombre + " recibió un PETACO");
+        } else if (visitas >= 10) {
+            System.out.println("🍾 Cliente " + nombre + " recibió una BOTELLA DE GUARO");
+        }
     }
 
-    public void setVisitas(int visitas) {
-        this.visitas = visitas;
+    public void mostrarCliente() {
+        System.out.println("Cliente: " + nombre + " | Visitas: " + visitas);
+        if (pasaporte != null) {
+            pasaporte.mostrarInfo();
+        } else {
+            System.out.println("Pasaporte: No tiene");
+        }
     }
-
-    public boolean isTienePasaporte() {
-        return tienePasaporte;
-    }
-
-    public void setTienePasaporte(boolean tienePasaporte) {
-        this.tienePasaporte = tienePasaporte;
-    }
-
-    public CLIENTE getSiguiente() {
-        return siguiente;
-    }
-
-    public void setSiguiente(CLIENTE siguiente) {
-        this.siguiente = siguiente;
-    }
-   
-    //metodos Importantes de la clase
-    public void registrarVisita(){
-    visitas++;
-    }
-    
-    public boolean esFrecuente(){
-    return visitas >= 15;// numero de visitas necesarias para considerar frecuente.
-    }
-    
-    public void asignarPasaporte(){
-    if(esFrecuente()){
-        tienePasaporte = true;
-        System.out.println("Se asigno pasaporte a " + nombre);
-    }else {
-        System.out.println(nombre+"Aun no es cliente frecuente.");
-    }
-    }
-    public void mostrarCliente(){
-        System.out.println((tienePasaporte ? "Si" :"No" )+"Cliente: "+nombre+"| Visitas: "+visitas+  "| Pasaporte: ");
-    }
-
 }
     
