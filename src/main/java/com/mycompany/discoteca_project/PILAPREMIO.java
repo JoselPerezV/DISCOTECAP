@@ -8,4 +8,9 @@ public class PILAPREMIO {
     public PILAPREMIO(){
     premios = new ListaEnlazada<>() {};
     }
+    //apilar premio
+public void apilar (String premio){
+premios.addFirst(premio);
+}
+
 }
