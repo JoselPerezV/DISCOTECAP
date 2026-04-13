@@ -25,6 +25,14 @@ String premio = premios.getFirst();
 premios.remove();
 return premio;
 }
-
+//Mostrar todos los premios
+public void mostrarPremios(){
+if(premios.size() == 0){
+    System.out.println("No hay premios");
+    return;
+}
+    System.out.println("Premios en la pila: ");
+    System.out.println(premios.toString());
+}
 
 }
