@@ -10,5 +10,14 @@ public class PASAPORTE {
         this.codigo = codigo;
         this.beneficio = "Acceso VIP: No hacer fila y participar por mas premios";
     }
+//metodos GET
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getBeneficio() {
+        return beneficio;
+    }
    
+    
 }
