@@ -46,5 +46,9 @@ public String getNombre() { return nombre; }
             System.out.println("Pasaporte: No tiene");
         }
     }
+
+    void setVisitas(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
     

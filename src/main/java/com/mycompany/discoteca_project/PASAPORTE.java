@@ -10,6 +10,10 @@ public class PASAPORTE {
         this.codigo = codigo;
         this.beneficio = "Acceso VIP: No hacer fila y participar por mas premios";
     }
+
+    PASAPORTE(String string, String nombre, String colombiana, String string0, String string1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 //metodos GET
     public String getCodigo() {
         return codigo;
