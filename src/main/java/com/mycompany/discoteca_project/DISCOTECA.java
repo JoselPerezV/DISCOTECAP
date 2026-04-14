@@ -40,7 +40,20 @@ public class DISCOTECA {
       pila.apilar("Entrada VIP Doble");
       System.out.println("\n Premios disponibles");
       pila.mostrarPremios();
+    
+      //Para que atiendan primero al cliente VIP
+      System.out.println("\n Atendiendo a un cliente ");
+      CLIENTE atendido= cola.atenderClienteVIP();
+      if(atendido !=null && !pila.estaVacia()){
+          String premio = pila.desapilar();
+          System.out.println("Cliente "+ atendido.getNombre() + "Recibio: "+premio);
+          System.out.println("\n Estado final de los clientes ");
+          cola.mostrarCola();
+          
+          System.out.println("\n Premios restanes ");
+          pila.mostrarPremios();
       
+      }
    
 }
 }  
