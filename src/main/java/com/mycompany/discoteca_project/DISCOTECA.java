@@ -25,7 +25,7 @@ for (int i = 0; i < cantidad; i++) {
 
         // Simular un evento especial
         DISCOTECAEVENT evento = new DISCOTECAEVENT(
-            "Noche de Reggaetón", 
+            "Noche de Reggaeton", 
             "14-04-2026", 
             2, 
             "Entrada VIP doble"
@@ -55,7 +55,7 @@ for (int i = 0; i < cantidad; i++) {
         CLIENTE atendido = cola.atenderClienteVIP();
         if (atendido != null && !pila.estaVacia()) {
             String premio = pila.desapilar();
-            System.out.println("Cliente " + atendido.getNombre() + " recibió: " + premio);
+            System.out.println("Cliente " + atendido.getNombre() + " recibio: " + premio);
         }
 
         System.out.println("\n--- Estado final de clientes ---");
