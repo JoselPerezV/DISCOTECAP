@@ -1,4 +1,4 @@
-//importacion del proyecto
+// Resultado final del Proyecto con la clase Main
 package com.mycompany.discoteca_project;
 import com.murcia.utils.Input; // Usamos la clase Input del profe
 

@@ -1,4 +1,4 @@
-//clase modificada por Andres
+//clase modificada por Andres y resultado final de esta
 package com.mycompany.discoteca_project;
 
 public class DISCOTECAEVENT {

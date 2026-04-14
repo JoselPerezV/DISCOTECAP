@@ -1,3 +1,4 @@
+//Clase Colacliente final
 package com.mycompany.discoteca_project;
 import com.murcia.utils.ColaEnlazada;
 //clase heredada de cliente y colaenlazada
