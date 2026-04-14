@@ -16,7 +16,22 @@ public class DISCOTECA {
    //verificar las recompensasa automaticamente
    cliente.verificarRecompensas();
    } 
-   
+
+      System.out.println("\n Estado inicial de clientes");   
+      cola.mostrarCola();
+      
+      //simular un evento especial en la discoteca
+      DISCOTECAEVENT evento = new DISCOTECAEVENT("Noche Reggaeton","26-04-2024", 2, "Entrada VIP doble");
+      System.out.println("\n Evento Activo  ");
+      evento.mostrarEvento();
+      
+      //Aplicar bonus del evento a todos los clientes 
+      System.out.println("\n Aplicando Bonus del evento ");
+      for(int i = 0; i< cola.size();i++){
+          CLIENTE cliente = cola.get(i);
+          evento.aplicarBonus(cliente);
+      
+      }
    
 }
 }  
