@@ -32,6 +32,15 @@ public class DISCOTECA {
           evento.aplicarBonus(cliente);
       
       }
+      
+      // pila de premios
+      PILAPREMIO pila = new PILAPREMIO();
+      pila.apilar("Botella de Aguardiente");
+      pila.apilar("Canasta de Cerveza");
+      pila.apilar("Entrada VIP Doble");
+      System.out.println("\n Premios disponibles");
+      pila.mostrarPremios();
+      
    
 }
 }  
