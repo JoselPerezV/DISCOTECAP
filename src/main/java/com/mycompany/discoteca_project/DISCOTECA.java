@@ -7,8 +7,8 @@ public class DISCOTECA {
    COLACLIENTE cola = new COLACLIENTE();
    int cantidad = Input.nextInt("¿Cuántos clientes quieres registrar?");
    for(int i = 0; i<cantidad;i++){
-   String nombre = Input.nextLine("Digite el nombre del Cliente: ");
-   int visitas = Input.nextInt("Digite el numero de sitas que tiene: ");
+   String nombre = Input.nextLine("\nDigite el nombre del Cliente:");
+   int visitas = Input.nextInt("Digite el numero de sitas que tiene:");
    
    CLIENTE cliente = new CLIENTE(nombre, visitas);
    cola.agregarCliente(cliente);
