@@ -11,7 +11,7 @@ Input.nextLine(""); // limpia el buffer
 
 for (int i = 0; i < cantidad; i++) {
     String nombre = Input.nextLine("\nDigite el nombre del cliente: ");
-    int visitas = Input.nextInt("Digite el número de visitas: ");
+    int visitas = Input.nextInt("Digite el numero de visitas: ");
     Input.nextLine(""); // limpia el buffer
 
     CLIENTE cliente = new CLIENTE(nombre, visitas);
@@ -43,8 +43,8 @@ for (int i = 0; i < cantidad; i++) {
 
         // Crear pila de premios
         PILAPREMIO pila = new PILAPREMIO();
-        pila.apilar("Botella de Guaro");
-        pila.apilar("Petaco");
+        pila.apilar("Botella de Aguardiente");
+        pila.apilar("Canasta Cerveza");
         pila.apilar("Entrada VIP doble");
 
         System.out.println("\n--- Premios disponibles ---");
